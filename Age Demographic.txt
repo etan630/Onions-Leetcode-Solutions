@@ -1,0 +1,9 @@
+1. Sort the Ages: First, sort the list of ages so we can use binary search to quickly locate the range of ages for each query.
+
+2. Binary Search for Range: For each query [a, b], use binary search to:
+2a. Find the first index where ages are greater than or equal to a (findStart()).
+2b. Find the first index where ages are greater than b (findEnd()).
+
+3. Count Viewers: The number of viewers between a and b is simply end - start.
+
+4. Efficiency: Sorting the ages takes O(N log N). Each query is processed in O(log N) using binary search, resulting in overall time complexity of O(N log N + Q log N).
