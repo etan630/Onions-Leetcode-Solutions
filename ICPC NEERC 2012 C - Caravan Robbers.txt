@@ -1,7 +1,16 @@
-1. The intervals are stored in a list and sorted by their starting points to ensure that they can be processed sequentially.
+1. The intervals are stored in a list and sorted by their starting 
+points to ensure that they can be processed sequentially.
 
-2. Binary Search on Interval Length: The key idea is to perform binary search on the interval length. We try to find the maximum possible length of a subinterval that all gangs can get by adjusting the range between the shortest possible interval and the maximum.
+2. Binary Search on Interval Length: The key idea is to perform binary search 
+on the interval length. We try to find the maximum possible length of a subinterval 
+that all gangs can get by adjusting the range between the shortest possible interval 
+and the maximum.
 
-3. Checking Feasibility: For each midpoint value in the binary search, we try to assign each gang a subinterval of that length and check if it fits within the bounds of their original interval. If we find that the subintervals don't fit, we reduce the length; otherwise, we increase it.
+3. Checking Feasibility: For each midpoint value in the binary search, we try 
+to assign each gang a subinterval of that length and check if it fits within 
+the bounds of their original interval. If we find that the subintervals don't 
+fit, we reduce the length; otherwise, we increase it.
 
-4. Fraction Simplification: Once we find the best possible interval length, the algorithm uses the gcd (Greatest Common Divisor) function to represent it as a simplified fraction.
+4. Fraction Simplification: Once we find the best possible interval length, 
+the algorithm uses the gcd (Greatest Common Divisor) function to represent 
+it as a simplified fraction.
