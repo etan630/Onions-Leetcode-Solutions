@@ -2,7 +2,9 @@
 
 2. Splitting: For arrays with more than one element, the array is split into three equal parts.
 
-3. Recursive Call: Each of these three parts is further split and processed using the same function (divConqHelper). This recursive splitting continues until segments of one element are reached.
+3. Recursive Call: Each of these three parts is further split and processed using the same 
+function (divConqHelper). This recursive splitting continues until segments 
+of one element are reached.
 
 4. Reassembly: After processing the three parts, they are reassembled, but their order is changed:
 The third part is placed first.
