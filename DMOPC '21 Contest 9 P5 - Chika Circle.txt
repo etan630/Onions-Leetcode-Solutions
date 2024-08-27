@@ -1,1 +1,20 @@
+Understanding Responses: 
+- Each person's response reflects the minimum label of their neighbors' cards. 
+This means each person's card is either equal to this minimum or the solution must 
+infer which value fits consistently across all answers.
+
+Initial Solution: 
+- For each person, the code checks the responses of their two immediate neighbors. 
+Based on their responses, it attempts to deduce the card value:
+  - If the minimums of the neighbors are consistent, the card's value is straightforward.
+  - Otherwise, the code records possible values for each position.
+
+Determine Exact Values: 
+- After identifying possible values for some cards and marking already known values, 
+the code attempts to fill in the remaining card values by matching the unvisited cards 
+with the possible candidates, ensuring consistency with the given responses.
+
+Final Assignment: 
+- The unvisited numbers are sorted and assigned to the positions with possible values 
+based on whether the assignment maintains consistency with all given answers.
 
