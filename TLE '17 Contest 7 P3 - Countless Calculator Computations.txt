@@ -1,1 +1,8 @@
+Binary Search Approach: The code uses binary search between a lower bound of 1.0 and an upper bound,
+which is Z^(1/Y) to approximate X
+ 
+Power Calculation: The calcPower function simulates the repeated exponentiation. 
+If the result is greater than or equal to Z, the search narrows down; otherwise, it widens.
 
+Precision: The binary search continues until the difference between the 
+bounds is less than a small threshold (1e-6) to ensure accuracy.
