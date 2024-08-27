@@ -1,1 +1,14 @@
+Breadth-First Search (BFS): The code uses BFS to find the shortest path (minimum moves) 
+for a knight on a chessboard. BFS is ideal for this because it explores all possible moves 
+level by level, ensuring that the first time it reaches the destination, it has used 
+the minimum number of moves.
 
+Knight's Moves: The moves list contains all possible moves a knight can make from any 
+position on the board. These moves are applied to the current position to generate new positions.
+
+Queue and Visited Set:
+  The queue stores the current position and the number of moves taken to reach it.
+  The visited set ensures that positions are not revisited, avoiding unnecessary calculations and loops.
+
+Termination: The BFS stops as soon as the knight reaches the target position (x2, y2), 
+returning the number of moves taken to get there.
