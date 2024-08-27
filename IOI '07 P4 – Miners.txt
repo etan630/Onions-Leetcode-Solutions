@@ -1,1 +1,19 @@
+Dynamic Programming Approach:
+The code uses dynamic programming (DP) to determine the maximum coal production 
+by strategically allocating food shipments to two mines.
 
+State Representation:
+States are represented by the last two shipments (or fewer if there haven't been 
+that many). Each state reflects the combination of the last shipments and their types.
+
+State Transitions:
+The precompute_transitions function calculates possible transitions from any state 
+with a new shipment, including the resulting coal production.
+
+DP Table Update:
+The DP table dp[i][j] tracks the maximum coal production with states i and j for the two mines. 
+For each shipment, the DP table is updated based on possible transitions.
+
+Final Result:
+After processing all shipments in reverse, the DP table at dp[0][0] contains the 
+maximum coal production achievable.
