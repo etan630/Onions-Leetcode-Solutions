@@ -1,1 +1,17 @@
+Objective:
+Find the minimum number of vertices required in a simple, undirected graph to accommodate exactly M edges.
+
+Concept:
+- For a graph with V vertices, the maximum number of edges is given by V×(V−1) / 2 (a complete graph).
+- To fit M edges, we need at least V such that V x (V - 1) / 2 ≥M.
+
+Approach:
+Estimate V: 
+- Use the quadratic formula to estimate the minimum V needed.
+- Adjust V: Check if the estimated V satisfies the edge requirement. Increment V if necessary 
+
+Implementation Details:
+Compute the initial estimate for V
+Increment V until the maximum number of edges for V vertices meets or exceeds M
+
 
