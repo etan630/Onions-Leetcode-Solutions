@@ -1,1 +1,19 @@
+Input Handling: The program reads 5 integers from the input, each between 2 and 32. 
+These numbers are stored in an array.
 
+Factor Counting: For each number, the factor function is called to count the 
+prime factors (excluding 1 and the number itself).
+    Dividing by 2: The function first divides the number by 2 as many times as possible, 
+    counting the number of times it divides evenly. This handles the factor of 2.
+
+    Odd Factors: After removing the factor of 2, the function checks for odd factors 
+    starting from 3 and increments the count for each factor found.
+
+
+    Remaining Prime: If the remaining number is greater than 2 (after removing all factors), 
+    it's a prime factor and the count is incremented.
+
+    Final Adjustment: If the count is 1 (meaning the number itself is prime and has no other factors), 
+    it is reset to 0, as prime numbers are considered to have no factors in this context.
+
+Output: The total number of factors for each of the 5 input numbers is printed.
