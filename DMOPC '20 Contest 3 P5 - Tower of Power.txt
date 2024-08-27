@@ -1,1 +1,11 @@
+Euler's Totient Function: The euler function calculates Φ(n), which helps reduce 
+large exponents in modular arithmetic.
 
+Modular Exponentiation: The mod_exp function efficiently computes base^exponent
+modmod using exponentiation by squaring.
+
+Tower Power Calculation: The tower_power function calculates the tower's power by iteratively 
+reducing the problem using moduli calculated with the Euler function, starting from the top 
+block down to the bottom.
+
+Final Output: The result is computed as the power of the tower modulo M
