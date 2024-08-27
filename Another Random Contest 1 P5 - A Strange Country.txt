@@ -1,1 +1,18 @@
+Data Structure:
+The code uses a Disjoint Set Union (DSU) or Union-Find data structure to manage 
+connected components and check if adding a road creates a cycle.
+
+Initialization:
+The roads vector maintains the parent pointers for DSU operations, while the 
+solution vector stores the result for each road.
+
+Processing Roads:
+- Roads are sorted by weight to ensure we always consider the minimum cost road first.
+- For each road, a binary search determines the earliest day it can be used without 
+forming a cycle in the minimum spanning tree (MST).
+- If a road can be used on day ind, it is added to the MST for that day, and DSU is 
+updated to reflect the union of the connected components.
+
+Output:
+The solution vector is printed, indicating which day each road was used or -1 if it was never used.
 
