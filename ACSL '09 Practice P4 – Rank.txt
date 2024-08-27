@@ -1,1 +1,14 @@
+Graph Representation:
+The build_graph function constructs a directed graph where an edge from player 
+a to player b represents player a defeating player b.
 
+Cycle Detection:
+The detect_cycles function uses Depth-First Search (DFS) to detect cycles in the graph. 
+Players involved in cycles are stored in the cycle_nodes set.
+
+Recursion Stack: During DFS, the rec_stack tracks nodes currently being visited to 
+identify back edges, which indicate a cycle.
+
+Counting Players in Cycles:
+After detecting cycles, the size of the cycle_nodes set is returned, which 
+represents the number of players whose rankings cannot be determined due to cyclic orderings.
