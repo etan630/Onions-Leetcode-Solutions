@@ -1,1 +1,29 @@
+Graph Representation:**
+   - The maze is represented as a graph where each vertex is a billabong, and 
+edges represent trails with circles. The graph uses a 2D array of lists (`graph`), 
+and each edge is associated with a boolean indicating its circle color (white or black).
+
+Distance Array:**
+   - `distance[x][y][c]` tracks the shortest path distance to a vertex `(x, y)` 
+when the last edge traversed had a color `c` (0 for white, 1 for black). This 
+helps ensure that the rule of alternating colors is respected.
+
+BFS Algorithm:**
+   - The BFS algorithm is used to explore the shortest paths. It starts from the 
+initial position with both possible colors (since the first move can be either color). 
+The BFS updates distances and ensures alternating colors are followed by checking the color of each edge.
+
+Graph Initialization:**
+   - The `initializeGraph` method sets up the graph structure and initializes 
+the distance array with `-1` to indicate unvisited nodes.
+
+Edge Reading:**
+   - The `readEdges` method reads the maze’s edge data and adds edges to the graph 
+based on the input format, which includes horizontal and vertical edges and diagonals.
+
+Shortest Path Calculation:**
+   - After BFS completes, the shortest path length to the target vertex is determined 
+by considering both possible ending states (last edge white or black).
+
+
 
