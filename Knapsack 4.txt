@@ -1,1 +1,20 @@
+Approach:
+Knapsack Problem: 
+- Model the problem as a variant of the knapsack problem where we balance strengths to maximize the meme value.
+Dynamic Programming: 
+- Use a DP approach to handle items with both positive and negative strengths.
+
+Key Concepts:
+Strength Offset: 
+- Strengths are adjusted by shifting to avoid negative indices, using a large enough array.
+DP Array:
+- Maintain a DP array dp where dp[i][j] represents the maximum meme value achievable with a strength balance j.
+
+Steps in the Code:
+Read Input: 
+- Collect strengths and meme values of both mathies and engineers, converting engineers' strengths to negative values.
+Initialize DP Table: 
+- Set initial values and prepare for DP calculations.
+Knapsack Algorithm:
+- Update the DP table by considering each item’s contribution to potential team configurations.
 
