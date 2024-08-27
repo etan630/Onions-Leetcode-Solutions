@@ -1,1 +1,7 @@
+Filter Items: 
+Only consider items with positive values (since items with zero or negative values 
+do not contribute to the total value).
 
+Compute Minimum Size: 
+Sum the capacities of all items with positive values. This is because the 
+smallest knapsack that can fit all valuable items will maximize the value since it includes all items.
