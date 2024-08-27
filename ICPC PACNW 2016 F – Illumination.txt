@@ -1,1 +1,24 @@
+Objective:
+- Determine if it's possible to configure lamps such that no two lamps in the same row or column 
+illuminate the same square, while each lamp illuminates a row or column without causing any overlap issues.
+
+Approach:
+2-SAT Problem: 
+- Model this problem using the 2-SAT problem framework, where each lamp can either 
+illuminate its row or its column, and constraints are set to ensure no conflicts.
+Implications: 
+- Build implications based on overlaps. If two lamps could overlap in their 
+illumination, their choices (row or column) are constrained.
+SCC (Strongly Connected Components): 
+- Use SCC to check if the constraints lead to a valid configuration. If a 
+lamp's row option implies its column option and vice versa, it's a conflict.
+
+Steps in the Code:
+Map Lamps: 
+- Create mappings for rows and columns to track lamps.
+Build Graph: 
+- Construct a graph representing implications based on potential overlaps of lamp illumination.
+Find SCC: 
+- Determine SCCs using DFS to check if there's a contradiction (i.e., a lamp's row option being in the same component as its column option).
+
 
