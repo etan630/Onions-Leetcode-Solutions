@@ -1,1 +1,14 @@
+Objective:
+Maximize Koosaga's joy given a number of cacti and matroids, where joy is computed as C × uc + M × um.
+Constraint: The total number of cacti and matroids C+M must not exceed k
+
+Approach:
+Brute Force: 
+- The code explores all possible combinations of cacti and matroids, ensuring C+M≤k.
+- For each valid combination, compute the joy C×uc+M×um.
+- Track the maximum joy value found.
+
+Implementation Details:
+- Iterate through all possible counts of cacti (i) and matroids (j) within the constraint i+j≤k.
+Calculate joy for each combination and update the maximum joy if the current value is higher.
 
