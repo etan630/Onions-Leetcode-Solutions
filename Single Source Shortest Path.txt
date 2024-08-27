@@ -1,1 +1,17 @@
+Graph Representation:
+The graph is represented using an adjacency matrix, initialized to Integer.MAX_VALUE 
+for non-existing edges and 0 for self-loops.
 
+Dijkstra’s Algorithm:
+This algorithm finds the shortest paths from a source node to all other nodes 
+in a graph with non-negative weights.
+It uses a priority queue to repeatedly extract the node with the smallest 
+tentative distance, updating its neighbors' distances.
+
+Process Nodes:
+Each node’s shortest distance is computed by iteratively choosing the unprocessed 
+node with the smallest distance, updating its neighbors' distances.
+
+Output:
+Print the shortest distances from the source node (node 1) to every other node. 
+If a node is unreachable, output -1.
