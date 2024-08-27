@@ -1,1 +1,17 @@
+Dynamic Programming Approach:
+The code uses dynamic programming (DP) to count paths from the top-left corner to
+the bottom-right corner of the grid.
 
+DP Table:
+dp[i][j] represents the number of paths to reach cell (i, j).
+
+Transition:
+To compute dp[i][j], sum paths from the top (dp[i-1][j]) and from the left 
+(dp[i][j-1]), only if (i, j) is not a wall (#).
+
+Initialization:
+Start with dp[0][0] = 1 (one way to be at the start).
+
+Result:
+The number of paths to reach the bottom-right corner is stored in dp[H-1][W-1], 
+and results are returned modulo 10^9 + 7 to handle large numbers.
