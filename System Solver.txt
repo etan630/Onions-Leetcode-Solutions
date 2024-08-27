@@ -1,1 +1,12 @@
+Gaussian Elimination:
+- Forward Elimination: Converts the matrix to an upper triangular form.
+- Back Substitution: Finds the solution by solving from the last row upwards.
+
+Matrix Check:
+- Rank Calculation: Determines if the system has a unique solution based on the rank of the matrix.
+
+Process:
+- Swap Function: Handles row exchanges for better numerical stability.
+- Check Function: Validates if a unique solution is possible.
+- Solve Function: Runs elimination and checks for a solution.
 
