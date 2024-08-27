@@ -1,1 +1,17 @@
+Dynamic Programming (DP) Table:
+dp[i][j] stores the side length of the largest square with the bottom-right corner at (i, j).
+
+State Transition:
+- If grid[i][j] is 1, the cell contributes to a square:
+- If on the first row or column, dp[i][j] is 1.
+- Otherwise, dp[i][j] is min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) + 1.
+- This ensures the square's side length is maximized.
+
+Tracking Maximum Size and Count:
+- Track max_square for the largest size found.
+- Track count_max_square for the number of such squares.
+
+Result:
+The final result is the product of max_square and count_max_square.
+
 
