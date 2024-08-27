@@ -1,1 +1,14 @@
+Dynamic Programming (DP) Array: 
+Use a 1D DP array dp[j] where dp[j] represents the maximum value achievable with a knapsack capacity of j.
+
+Item Processing: 
+For each item, update the DP array to include the item’s value if
+it can be accommodated within the current capacity j.
+
+Item Inclusion: 
+Iterate through items in reverse capacity order to ensure each item is only considered once per capacity level.
+
+Max Value Update: Use previously computed values to determine the best 
+possible value for each capacity incrementally.
+
 
