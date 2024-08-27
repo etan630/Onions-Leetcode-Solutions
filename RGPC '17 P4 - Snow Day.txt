@@ -1,1 +1,20 @@
+Graph Representation:
+The problem is modeled as a Directed Acyclic Graph (DAG) with scenic points as nodes and paths as edges.
 
+Topological Sorting:
+Nodes are processed in a linear order based on topological sorting, ensuring 
+all predecessors are processed before a node.
+
+Longest Path Calculation:
+Using dynamic programming, compute the longest path from the start node (1) to 
+the end node (N). Maintain:
+  distance[] for the longest distance to each node.
+  count[] for the number of nodes visited on the longest path.
+
+Updating Distances:
+Update distances and counts for each node based on the topological order. 
+Ensure the longest path and the maximum scenic points are recorded.
+
+Result:
+Print the longest distance and the number of scenic points visited on that path. 
+Print -1 if no path exists.
