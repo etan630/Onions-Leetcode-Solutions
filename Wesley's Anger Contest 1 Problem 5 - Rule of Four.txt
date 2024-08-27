@@ -1,1 +1,26 @@
+Objective:
+- Determine if it’s possible to organize a trip while satisfying given constraints on student attendance.
+
+Approach:
+2-SAT Problem Formulation: 
+- Represent each student’s trip decision as a Boolean variable and transform the problem into a 2-SAT problem where:
+    2*i represents student i going on the trip.
+    2*i + 1 represents student i not going on the trip.
+
+Constraints Translation:
+- FRIENDS: If student a and b are friends, they must both either go or not go. Translate into implications for the 2-SAT graph.
+- ENEMIES: If student a and b are enemies, at most one can go. Translate into implications for the 2-SAT graph.
+- PARTNERS: Exactly one of a or b must go. Create implications ensuring that if one goes, the other doesn’t, and vice versa.
+- GROUP: At least one of a or b must go. Ensure that either a or b or both are marked for going.
+
+Algorithm Steps:
+Graph Construction: 
+- Build the implication graph based on constraints.
+SCC and Transitive Closure: 
+- Use Tarjan’s algorithm to find Strongly Connected Components (SCCs). Compute the transitive 
+closure to understand reachability within SCCs.
+Check Consistency: 
+0 Ensure no student and its negation fall within the same SCC (which would indicate a conflict). 
+Apply forced constraints and determine the feasible assignment for each student.
+
 
