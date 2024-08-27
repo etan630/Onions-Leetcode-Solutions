@@ -1,1 +1,15 @@
+Random Guesses: 
+It makes random guesses of indices j adn q for thr two permutations A and B
+
+Store Results: 
+For each guess, it stores the values A[j] anmd B[q] in two maps, first and second, respectively.
+
+Check for Match: 
+It checks if any value from the first map matches a value from the second map. If a match is found, 
+it prints the corresponding indices.
+
+Repeat: The process is repeated up to 10,000 times or until a match is found.
+
+
+
 
