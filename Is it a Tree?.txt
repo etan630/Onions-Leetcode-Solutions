@@ -1,1 +1,16 @@
+Edge Counting:
+The code counts the number of edges in the adjacency matrix. A tree with n nodes 
+must have exactly n-1 edges. If the number of edges is not n-1, the matrix does not represent a tree.
 
+Symmetry Check:
+Since the graph is undirected, the adjacency matrix must be symmetric. 
+The code checks for this by ensuring tree[i][j] == tree[j][i] for all i and j.
+
+Cycle Detection and Connectivity Check (BFS):
+The BFS traversal ensures that the graph is connected (all nodes are visited) 
+and that no cycles exist (no back edges). If any node is revisited through a 
+different parent, a cycle is detected, and the graph is not a tree.
+
+Final Check:
+If the graph has n-1 edges, is connected, and has no cycles, then it is a tree. 
+Otherwise, it's not.
