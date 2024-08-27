@@ -1,1 +1,9 @@
+Dynamic Programming Approach:
+The code uses a bottom-up dynamic programming approach to compute the maximum path sum in a triangle.
+
+Algorithm:
+Starting from the second-to-last row, update each element by adding the maximum of 
+the two possible values below it (left and right diagonals).
+Continue this process upwards to the top of the triangle.
+The value at the top of the triangle (triangle[0][0]) will hold the maximum path sum from top to base.
 
