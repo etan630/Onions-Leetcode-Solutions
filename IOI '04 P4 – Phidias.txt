@@ -1,1 +1,16 @@
+DP Table:
+dp[w][h] represents the minimum waste area when cutting a slab of size w × h.
 
+Initialization:
+Initialize dp[w][h] to w * h (the area of the slab) assuming the entire slab is 
+wasted if no plates of size w × h are found.
+
+Plate Check:
+If a plate of size w × h is desired, set dp[w][h] to 0.
+
+State Transition:
+Update dp[w][h] by checking all possible vertical and horizontal cuts, combining the 
+results to find the minimum waste.
+
+Final Result:
+The minimum waste for the original slab size W × H is given by dp[W][H].
