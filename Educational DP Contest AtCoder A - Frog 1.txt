@@ -1,1 +1,16 @@
+Dynamic Programming Approach:
+The code uses dynamic programming (DP) to find the minimum cost for the frog to reach the last stone.
+
+DP Array:
+dp[i] represents the minimum cost to reach stone i from stone 1.
+
+Transitions:
+From stone i, the frog can jump to stone i+1 or i+2. The cost of jumping to i+1 is |h[i] - h[i+1]|, 
+and to i+2 is |h[i] - h[i+2]|.
+
+DP Update:
+The value of dp[i] is updated as the minimum of the costs to reach it from the two possible previous stones.
+
+Result:
+The final result is dp[N-1], the minimum cost to reach the last stone.
 
