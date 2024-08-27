@@ -1,1 +1,21 @@
+Objective:
+- Minimize the total flight duration for visiting all cities exactly once, 
+ `while respecting the constraint that cities labeled K must either have all 
+smaller labeled cities visited before them or after them.
+
+Approach:
+Dynamic Programming: 
+- Use a DP approach to find the minimum cost. Define dp[left][right] as the minimum cost of visiting 
+all cities from the next city after right to the last city, where cities up to left have been visited before right.
+
+Steps in the Code:
+Initialization: 
+- Read and initialize the adjacency matrix adj representing flight durations and the DP table dp.
+Recursive DP Function: 
+- minFlight(left, right) calculates the minimum flight cost considering the next city to visit 
+and updating based on whether it should be visited in the left segment or the right segment.
+Base Case: 
+- If the next city exceeds the number of cities, return 0 (end of the path).
+
+
 
