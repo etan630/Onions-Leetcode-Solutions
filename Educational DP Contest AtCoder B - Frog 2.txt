@@ -1,1 +1,13 @@
+DP Array:
+dp[i] represents the minimum cost to reach stone i.
+
+Transition:
+For each stone i, the cost is computed by considering all possible previous stones j 
+within the last K jumps and taking the minimum cost from those options.
+
+Initialization:
+Start with dp[1] = 0 because the cost to be on the first stone is zero.
+
+Result:
+The minimum cost to reach the last stone N is found in dp[N].
 
