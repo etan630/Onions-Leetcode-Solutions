@@ -1,1 +1,17 @@
+Centroid Decomposition:
+The code uses centroid decomposition to efficiently handle tree queries. 
+A centroid is a node that minimizes the size of the largest subtree when removed. 
+This helps in breaking down the problem into smaller subproblems.
 
+DFS for Distance Calculation:
+The dfsFindPairs function finds pairs of distances from the centroid where their 
+sum equals the target length K. The dfsStorePairs function stores the shortest
+distance from the centroid to any node with a given weight.
+
+Finding Minimum Number of Highways:
+For each centroid, the code finds all valid pairs of distances that sum up to 
+K and tracks the minimum number of edges required to achieve this distance.
+
+Handling Multiple Subtrees:
+The tree is divided into subtrees rooted at the centroid, and each subtree 
+is processed recursively to ensure all possible paths are considered.
