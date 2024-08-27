@@ -1,1 +1,22 @@
+Graph Representation:
+The code represents the billabongs and trails as an undirected graph using an adjacency list.
 
+Finding Tree Diameter:
+It uses BFS (Breadth-First Search) to determine the diameter of the tree, which
+is the longest path between any two nodes in the tree. The diameter is found by 
+performing BFS twice: once from an arbitrary node to find the farthest node, and then 
+from that farthest node to find the farthest node from it.
+
+Finding Tree Radius:
+The radius is determined from each node, which is used to find the shortest 
+maximum distance from the node to the farthest node in the tree.
+
+Processing the Tree:
+The code identifies key nodes (centers) and calculates the possible longest path 
+after adding new trails of length L. It considers cases where:
+  The longest path includes two main centers plus one new trail.
+  The longest path includes three centers with two new trails.
+
+Final Computation:
+It evaluates possible longest travel times considering the new trails and 
+updates the maximum distance accordingly.
