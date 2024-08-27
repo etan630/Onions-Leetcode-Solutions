@@ -1,1 +1,9 @@
+Random Sampling: 
+It generates 30,000 random points within a rectangle of width L and height 1.
 
+Curve Comparison: 
+For each point, it checks if the y-coordinate of the point is below or on the 
+curve exp(−x^2) where x is the x-coordinate of the point.
+
+Estimate Area: The area under the curve is estimated using the ratio of points that 
+fall under the curve to the total number of points, multiplied by the area of the rectangle.
